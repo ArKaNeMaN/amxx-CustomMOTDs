@@ -1,0 +1,27 @@
+{
+    "motdOwners": {
+        "Title": "Цена випки",
+        "Url": "http://ark-cs.ru/motd/admins.html",
+        "Type": "Site"
+    },
+    "motdServer": {
+        "Title": "Цена випки",
+        "Url": "http://ark-cs.ru/motd/servers.html",
+        "Type": "Site"
+    },
+    "motdInfo": {
+        "Title": "Цена випки",
+        "Url": "http://ark-cs.ru/motd/motd.html",
+        "Type": "Site"
+    },
+    "motdDonate": {
+        "Title": "Цена випки",
+        "Url": "http://ark-cs.ru/motd/vipka.html",
+        "Type": "Site"
+    },
+    "motdRules": {
+        "Title": "Правила",
+        "Url": "http://ark-cs.ru/motd/pravila.html",
+        "Type": "Site"
+    }
+}
