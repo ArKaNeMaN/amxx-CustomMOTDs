@@ -73,20 +73,26 @@ LoadMotds(){
         json_object_get_name(List, i, Cmd, charsmax(Cmd));
         Item = json_object_get_value(List, Cmd);
         if(!json_is_object(Item)){
-            set_fail_state("[ERROR] Invalid config structure. File '%s'", file);
-            return;
+            log_amx("[ERROR] [ERROR] Invalid config structure. File '%s'. Item '%s' skipped.", file, Cmd);
+            continue;
+            //set_fail_state("[ERROR] Invalid config structure. File '%s'", file);
+            //return;
         }
 
         json_object_get_string(Item, "Type", temp, charsmax(temp));
         Data[MD_Type] = GetMOTDType(temp);
         if(!Data[MD_Type]){
-            set_fail_state("[ERROR] Undefined MOTD type '%s'", temp);
-            return;
+            log_amx("[ERROR] Undefined MOTD type '%s'. Item '%s' skipped.", temp, Cmd);
+            continue;
+            //set_fail_state("[ERROR] Undefined MOTD type '%s'", temp);
+            //return;
         }
         json_object_get_string(Item, "Url", Data[MD_Url], charsmax(Data[MD_Url]));
         if(Data[MD_Type] == MT_File && !file_exists(Data[MD_Url])){
-            set_fail_state("[ERROR] MOTD file '%s' not found", Data[MD_Url]);
-            return;
+            log_amx("[ERROR] MOTD file '%s' not found. Item '%s' skipped.", Data[MD_Url], Cmd);
+            continue;
+            //set_fail_state("[ERROR] MOTD file '%s' not found", Data[MD_Url]);
+            //return;
         }
         json_object_get_string(Item, "Title", Data[MD_Title], charsmax(Data[MD_Title]));
 
