@@ -1,7 +1,12 @@
 {
-    "motdExample": {
-        "Title": "[Пример] Dec-CS",
+    "motdExample1": {
+        "Title": "[Пример] Dev-CS главная",
         "Url": "https://dev-cs.ru",
         "Type": "Site"
+    },
+    "motdExample2": {
+        "Title": "[Пример] Инфо о донате",
+        "Url": "vipka.txt",
+        "Type": "File"
     }
 }
