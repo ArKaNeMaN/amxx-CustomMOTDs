@@ -93,7 +93,10 @@ LoadMotds(){
         TrieSetArray(Motds, Cmd, Data, E_MotdData);
 
         RegisterClCmds(Cmd, "Cmd_ShowMOTD");
+
+        json_free(Item);
     }
+    json_free(List);
 }
 
 RegisterClCmds(const Cmd[], const Handler[]){
