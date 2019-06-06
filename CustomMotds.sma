@@ -21,7 +21,7 @@ enum _:E_MotdData{
 new Trie:Motds;
 
 new const PLUG_NAME[] = "Custom MOTDs";
-new const PLUG_VER[] = "1.0.1";
+new const PLUG_VER[] = "1.0.2";
 
 public plugin_init(){
     register_plugin(PLUG_NAME, PLUG_VER, "ArKaNeMaN");
