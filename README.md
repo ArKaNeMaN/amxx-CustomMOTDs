@@ -4,7 +4,9 @@
 
 Custom MOTDs позволяет добавлять команды для вызова абсолютно любых МОТД окон без написания под них отдельных плагинов.
 
-## Настройки (`amxmodx/configs/plugins/CustomMOTDs/list.json`)
+## Настройки
+
+`amxmodx/configs/plugins/CustomMOTDs/list.json`
 
 ### Структура
 
